@@ -8,7 +8,7 @@
 >**Selects top 10 most color and calculates their percentages.**<br/>
 **After that user can see result of analyze also can submit the image with results.**
 
-### 2) In main page all images are shown with the most image it has.
+### 2) In the main page all images are shown with the most image it has.
 >**User can search images via colors.Only pictures that has the searched color will be displayed.**<br/>
 >**When the images are clicked, the dialog that contains the top 10 colors appears.**
 
