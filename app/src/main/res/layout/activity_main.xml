@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/main"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:weightSum="10"
+            android:layout_marginTop="10dp"
+
+            android:orientation="horizontal"
+            android:background="@drawable/radius_rectangle"
+            android:backgroundTint="#e9e9e9">
+
+
+            <EditText
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:drawablePadding="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Search image via colors"
+                    android:textColor="#3F3F3F"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+            />
+            <RelativeLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#3F3F3F"
+                    android:layout_marginRight="5dp">
+
+            </RelativeLayout>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_compare"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/upload"/>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/preview"
+    />
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/imagesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:visibility="gone"
+    />
+
+</LinearLayout>

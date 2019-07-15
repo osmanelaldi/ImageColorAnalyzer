@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="@dimen/cardview_default_radius"
+        android:layout_marginRight="10dp"
+>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/card"
+    >
+        <TextView
+            android:id="@+id/colorPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginHorizontal="5dp"
+            />
+        <TextView
+            android:id="@+id/colorFamily"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+        />
+        <TextView
+            android:id="@+id/colorHue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+        />
+        <TextView
+            android:id="@+id/colorRGB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+        />
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/colorHEX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"/>
+
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>
